@@ -1,5 +1,5 @@
 * [DESING](https://www.figma.com/file/Qf1vfQSHFOXoAvHRQlypHT/Untitled-(Copy)?node-id=1-2&t=rVfayuH5sjlgG66G-0)
-* [DEMO LINK](https://olhayevstifieieva.github.io/layout_miami/)
+* [DEMO LINK](https://olhayevstifieieva.github.io/testTask/)
 
 Local development
 
