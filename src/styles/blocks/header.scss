@@ -1,0 +1,111 @@
+@import '../utils/vars';
+
+.header {
+  font-family: 'Montserrat';
+  // height: 100%;
+  height: 80vh;
+  background-image: url(../images/header-back-tablet.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include onDesktop {
+    background-image: url(../images/header-back.jpg);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+    &-bottom {
+      margin-top: 50px;
+      align-self: flex-start;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 40px;
+      color: $white;
+
+      @include onDesktop {
+        margin-top: 0;
+        font-size: 48px;
+      }
+
+      &--yellow {
+        margin-top: 10px;
+        padding: 6px;
+        color: $blue;
+        background-color: $header-accent;
+
+        @include onDesktop {
+          padding: 10px;
+          width: 100%;
+          max-width: 216px;
+        }
+      }
+
+      &--bold {
+        margin-top: 10px;
+        font-weight: 800;
+      }
+
+      @include onDesktop {
+        line-height: 59px;
+      }
+    }
+  }
+
+  &__title {
+    &-wrap {
+      padding-top: 37px;
+      width: 100%;
+      max-width: 310px;
+      height: 90px;
+      background-image: url(../images/header-title-back.png);
+      background-size: contain;
+      background-position: 100%;
+      background-repeat: no-repeat;
+
+      @include onTablet {
+        padding-top: 37px;
+        width: 100%;
+        max-width: 310px;
+        height: 90px;
+      }
+
+      @include onDesktop {
+        padding-top: 46px;
+        width: 100%;
+        max-width: 410px;
+        height: 160px;
+      }
+    }
+
+    &-text {
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+
+      &--yellow{
+        color: $header-accent;
+      }
+
+      @include onTablet {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      @include onDesktop {
+        font-size: 48px;
+        line-height: 59px;
+      }
+
+    }
+  }
+}

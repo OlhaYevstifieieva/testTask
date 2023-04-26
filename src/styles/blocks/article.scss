@@ -1,0 +1,193 @@
+@import '../utils/vars';
+
+.article {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Montserrat';
+
+  &__text {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: $text-main-color;
+
+    @include onTablet {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 45px;
+      font-size: 29px;
+      line-height: 35px;
+    }
+
+    &-red {
+      color: $red-accent;
+    }
+
+    &-author {
+      font-weight: 700;
+
+      &--red {
+        color: $red-accent
+      }
+    }
+  }
+}
+
+.article__proof {
+  padding: 24px 9px 9px;
+  margin: 0 auto 70px;
+  max-width: 700px;
+  border: 25px solid transparent;
+  border-image: linear-gradient(136.96deg, #3A82F0 -0.75%, #014BB8 100.56%);
+  border-image-slice: 1;
+  outline: 8px solid $dark-color;
+  outline-offset: -25px;
+
+  @include onTablet {
+    margin-bottom: 130px;
+  }
+
+  &-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-main-color;
+
+    @include onTablet {
+      padding-left: 65px;
+      padding-right: 53px;
+      font-size: 17px;
+    }
+  }
+
+  &-header {
+    display: flex;
+    margin-bottom: 36px;
+    font-size: 20px;
+    line-height: 25px;
+
+    &--desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &--name {
+      font-weight: 700;
+      color: $blue-light;
+    }
+
+    &--bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 67px;
+      &-time {
+        font-weight: 500;
+        color: $grey;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 18px 24px 21px 15px;
+    box-shadow: -4.9px -4.9px 4.9px rgba(0, 0, 0, 0.25), 4.9px 4.9px 4.9px rgba(0, 0, 0, 0.43);
+
+    @include onTablet {
+      flex-direction: row;
+      margin-top: 100px;
+    }
+
+    &--reactions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &--like {
+      background-image: url(../images/like.svg);
+    }
+
+    &--heart {
+      background-image: url(../images/heart.svg);
+    }
+
+    &--smile {
+      background-image: url(../images/smile.svg);
+    }
+
+    &--count {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1px;
+      color: $grey;
+    }
+
+    &--wrap {
+      display: flex;
+      flex-direction: column;
+
+      @include onTablet {
+        flex-direction: row;
+      }
+    }
+
+    &--text {
+      font-weight: 500;
+      font-size: 13px;
+      color: $grey;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      @include onTablet {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.article__img {
+  padding-bottom: 45px;
+  max-width: 100%;
+  height: auto;
+
+  &--center {
+    display: block;
+    margin: 0 auto;;
+  }
+}
+
+.icon {
+  margin-right: 14px;
+  width: 74px;
+  height: 74px;
+}
+
+.icon-proof {
+  margin-right: 4px;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
+}

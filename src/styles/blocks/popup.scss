@@ -1,0 +1,69 @@
+@import '../utils/vars';
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: 'Montserrat';
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  background: $white;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background-color: #00bcd4;
+  color: $white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-button:hover {
+  animation: pulse 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 188, 212, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
