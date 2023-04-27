@@ -2,11 +2,11 @@
 
 The web page contains information about the pharmaceutical scandal. You can find detailed information about its essence, and answers to current questions from specialists. The web page is implemented for a 1200px viewing window. There is also an adaptive version for a tablet and a mobile version.
 
-+ * [DESING](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1)
-+ * [DEMO LINK](https://olhayevstifieieva.github.io/layout_miami/)
+* [DESING](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1)
+* [DEMO LINK](https://olhayevstifieieva.github.io/layout_miami/)
 
 ## Local development
-### ecnologies
+### Tecnologies
 
     HTML5
     SCSS
